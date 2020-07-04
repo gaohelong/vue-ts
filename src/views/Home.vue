@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <img alt="Vue logo" v-lazy="vueLogo">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="msg" />
+    <div :class="{ title: titleCls }">
+      title: {{ title }}
+    </div>
   </div>
 </template>
 
@@ -17,8 +20,15 @@ export default {
   },
   data: function () {
     return {
-      vueLogo
+      vueLogo,
+      msg: 'Welcome to Your Vue.js App1',
+      title: 'china',
+      titleCls: true
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  @import './Home.scss'
+</style>
