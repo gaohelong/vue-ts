@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" v-lazy="vueLogo">
-    <HelloWorld :msg="msg" />
     <div :class="{ title: titleCls }">
-      title: {{ title }}
+      Title: {{ title }}
     </div>
+    <img alt="Vue logo" v-lazy="vueLogo">
+    <HelloWorld :msg="msg" :ts="ts" />
   </div>
 </template>
 
@@ -21,8 +21,9 @@ export default {
   data: function () {
     return {
       vueLogo,
-      msg: 'Welcome to Your Vue.js App1',
-      title: 'china',
+      ts: 'TypeScript',
+      msg: 'Welcome to Your Vue.js App',
+      title: 'TypeScript',
       titleCls: true
     }
   }
@@ -30,5 +31,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import './Home.scss'
+  @import './Home.scss';
 </style>
