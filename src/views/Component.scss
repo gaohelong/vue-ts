@@ -1,0 +1,20 @@
+.component {
+  text-align: left;
+  font-size: 20px;
+
+  a {
+    display: block;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+    
+    &.router-link-active {
+      color: #42B983;
+    }
+  }
+  
+  .container {
+    margin-top: 40px;
+  }
+}

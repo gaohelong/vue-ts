@@ -11,6 +11,23 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
+    path: '/component/',
+    name: 'Component',
+    component: () => import('../views/Component.vue'), // router lazyload.
+    children: [
+      {
+        path: 'cptPE/:tid',
+        name: 'cptPE',
+        component: () => import('../views/PE.vue')
+      },
+      {
+        path: 'cptVuex',
+        name: 'cptVuex',
+        component: () => import('../views/Vuex.vue')
+      }
+    ]
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
