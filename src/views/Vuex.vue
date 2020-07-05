@@ -1,6 +1,8 @@
 <template>
   <div class="cptPE">
     <div class="title">{{ title }}</div>
+    <div class="state">state title: {{ this.$store.state.title }}</div>
+    <button class="btn" @click="changeState">点击修改状态</button>
     <CptVuex msg="我是Props" />
   </div>
 </template>
@@ -18,8 +20,16 @@ export default {
     }
   },
   created () {
-    console.log('query:', this.$route.query)
-    console.log('params:', this.$route.params)
+    console.log('created')
+  },
+  mounted () {
+    console.log('mounted')
+    console.log(this.$store.state.title)
+  },
+  methods: {
+    changeState () {
+      this.$store.dispatch('changeTitle', 'vuex')
+    }
   }
 }
 </script>
