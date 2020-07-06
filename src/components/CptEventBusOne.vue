@@ -37,6 +37,11 @@ export default class CptEventBusOne extends Vue {
       this.eventBusTwoMsg = msg
     })
   }
+
+  private beforeDestroy (): void {
+    // 卸载EventBus监听事件
+    $EventBus.$off('sendDataEventBusOne')
+  }
 }
 </script>
 

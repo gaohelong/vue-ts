@@ -29,6 +29,16 @@ const routes: Array<RouteConfig> = [
         path: 'cptEventBus',
         name: 'cptEventBus',
         component: () => import('../views/EventBus.vue')
+      },
+      {
+        path: 'cptAL',
+        name: 'cptAL',
+        component: () => import('../views/AttrListeners.vue')
+      },
+      {
+        path: 'cptPI',
+        name: 'cptPI',
+        component: () => import('../views/ProviderInject.vue')
       }
     ]
   },

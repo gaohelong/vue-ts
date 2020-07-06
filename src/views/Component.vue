@@ -29,16 +29,12 @@ export default {
           title: 'eventBus'
         },
         {
-          url: '/component/cptAL',
-          title: '$attrs/$listeners'
-        },
-        {
           url: '/component/cptPI',
           title: 'provide / inject'
         },
         {
-          url: '/component/cptPC',
-          title: 'ref 与 $parent / $children'
+          url: '/component/cptAL',
+          title: '$attrs/$listeners'
         }
       ]
     }

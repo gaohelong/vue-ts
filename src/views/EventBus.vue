@@ -1,7 +1,7 @@
 <template>
   <div class="cptPE">
     <div class="row">{{ title }}</div>
-    <div class="row">获取EventBusOne传递过来的数据：{{ childrenMsg }}</div>
+    <div class="row">EventBusOne传递过来的数据：{{ childrenMsg }}</div>
     <CptEventBusOne msg="父子组件通信" />
     <CptEventBusTwo msg="兄弟组件通信" />
   </div>
