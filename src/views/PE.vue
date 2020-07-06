@@ -14,7 +14,7 @@ export default {
   },
   data: function () {
     return {
-      title: 'Props $emit实现父子组件的通信',
+      title: 'Props $emit 适用于父子组件的通信',
       helloWorldMsg: '欢迎使用HellowWorld组件',
       helloWorldTs: '我是Ts组件',
       t: 'a'

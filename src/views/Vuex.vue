@@ -16,7 +16,7 @@ export default {
   },
   data: function () {
     return {
-      title: 'vuex可以实现与父子组件、兄弟组件、隔代组件的通信.'
+      title: 'vuex 适用于父子组件、兄弟组件、隔代组件的通信.'
     }
   },
   created () {
@@ -25,6 +25,10 @@ export default {
   mounted () {
     console.log('mounted')
     console.log(this.$store.state.title)
+  },
+  beforeDestroy () {
+    console.log('beforeDestroy')
+    console.log(this.$store.getters.getTitle)
   },
   methods: {
     changeState () {

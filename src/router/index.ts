@@ -24,6 +24,11 @@ const routes: Array<RouteConfig> = [
         path: 'cptVuex',
         name: 'cptVuex',
         component: () => import('../views/Vuex.vue')
+      },
+      {
+        path: 'cptEventBus',
+        name: 'cptEventBus',
+        component: () => import('../views/EventBus.vue')
       }
     ]
   },
