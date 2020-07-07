@@ -15,3 +15,24 @@
     <!-- built files will be auto injected -->
   </body>
 </html>
+<script type="application/javascript">
+  function setRemUnit() {
+    var docEl = document.querySelector('html')
+    var clientWidth = docEl.clientWidth
+    var rem;
+    if (clientWidth >= 1024) {
+      rem = 37.5
+    } else {
+      rem = clientWidth / 10
+    }
+    docEl.style.fontSize = rem + 'px'
+  }
+  
+  document.addEventListener('DOMContentLoaded', function (){
+    setRemUnit();
+  });
+  
+  window.addEventListener('resize', function (){
+    setRemUnit();
+  });
+</script>

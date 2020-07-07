@@ -28,7 +28,7 @@ export default {
   },
   beforeDestroy () {
     console.log('beforeDestroy')
-    console.log(this.$store.getters.getTitle)
+    console.log('getters.getTitle:', this.$store.getters.getTitle)
   },
   methods: {
     changeState () {

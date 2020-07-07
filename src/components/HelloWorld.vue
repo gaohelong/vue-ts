@@ -38,7 +38,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { State, Getter } from 'vuex-class'
+import { State } from 'vuex-class'
 
 @Component
 export default class HelloWorld extends Vue {

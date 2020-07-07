@@ -6,11 +6,12 @@
         <option value="cn">中文</option>
         <option value="en">English</option>
       </select>
-      <span>Selected: {{ selected }}</span>
+      <span>{{ $t("navList.currentLang") }}: {{ selected }}</span>
     </div>
     <div id="nav">
       <router-link to="/">{{ $t("navList.home") }}</router-link> |
       <router-link to="/component">{{ $t("navList.component") }}</router-link> |
+      <router-link to="/unitTest">{{ $t("navList.unitTest") }}</router-link> |
       <router-link to="/about">{{ $t("navList.about") }}</router-link>
     </div>
     <transition name="slide-left">

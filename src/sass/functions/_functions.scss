@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+// px转rem.
+@function pxToRem($px) {
+    @return ($px/$fontSize) * 1rem;
+}

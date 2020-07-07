@@ -8,14 +8,18 @@ const messages = {
     navList: {
       home: '首页',
       component: '组件',
-      about: '关于'
+      about: '关于',
+      currentLang: '已选择',
+      unitTest: '单元测试'
     }
   },
   en: {
     navList: {
       home: 'Home',
       component: 'Component',
-      about: 'About'
+      about: 'About',
+      currentLang: 'Selected',
+      unitTest: 'Unit Test'
     }
   }
 }

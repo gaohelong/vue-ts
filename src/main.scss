@@ -1,3 +1,15 @@
+@import './sass/main.scss';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0 pxToRem(10) 0;
+  font-size: pxToRem(16);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7,10 +19,11 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: pxToRem(30);
 }
 
 #nav a {
+  font-size: pxToRem(18);
   font-weight: bold;
   color: #2c3e50;
 }
@@ -20,19 +33,30 @@
 }
 
 .btn {
-  width: 160px;
-  line-height: 40px;
-  font-size: 16px;
+  width: pxToRem(160);
+  line-height: pxToRem(40);
+  font-size: pxToRem(16);
   color: #ffffff;
   background-color: darkgreen;
   outline: 0;
   border: 0;
-  border-radius: 8px;
+  border-radius: pxToRem(8);
 }
 
 .row {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 40px;
+  margin-top: pxToRem(20);
+  margin-bottom: pxToRem(20);
+  line-height: pxToRem(40);
   border-bottom: 1px solid #cccccc;
+  
+  &.title {
+    font-size: pxToRem(20);
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html{
+    font-size: 37.5px;
+  }
 }
